@@ -23,15 +23,17 @@ Core Principles
 
 Directory Structure (example)
 -----------------------------
+```powershell
 project/
 │
-├── `dummy.json`                  # Predefined dummy pools per PII type
-├── `process_pdf.py`              # Main pipeline runner
+├── `dummy.json`                                     # Predefined dummy pools per PII type
+├── `personal_info_replace_by_dummy.py`              # Main pipeline runner
 ├── output/
 │   ├── `pii_page_1.json`         # Input PII (page 1)
 │   ├── `replace_page_1.json`     # Authoritative replacements for page 1
 │   ├── `page_1_sanitized.txt`    # Resulting sanitized text for page 1
 │   └── `master_pii.json`         # Historical mapping of originals -> dummies
+```
 
 Inputs
 ------
@@ -115,7 +117,7 @@ Environment Requirements
 pip install pytesseract pdfplumber pymupdf pillow
 ```
 
-Windows notes: this project has been tested on Windows; ensure the Tesseract binary path is set in `process_pdf.py` if required.
+Windows notes: this project has been tested on Windows; ensure the Tesseract binary path is set in `personal_info_replace_by_dummy.py` if required.
 
 How to Run
 ----------
@@ -126,7 +128,7 @@ Ensure the following exist in the project root:
 Then run:
 
 ```powershell
-python process_pdf.py
+python personal_info_replace_by_dummy.py
 ```
 
 What the script guarantees
