@@ -26,13 +26,14 @@ Directory Structure (example)
 ```powershell
 project/
 │
-├── `dummy.json`                                     # Predefined dummy pools per PII type
-├── `personal_info_replace_by_dummy.py`              # Main pipeline runner
+├── dummy.json                                     # Predefined dummy pools per PII type
+├── personal_info_replace_by_dummy.py              # Main pipeline runner
+├── MR.pdf                      # PII pdf
 ├── output/
-│   ├── `pii_page_1.json`         # Input PII (page 1)
-│   ├── `replace_page_1.json`     # Authoritative replacements for page 1
-│   ├── `page_1_sanitized.txt`    # Resulting sanitized text for page 1
-│   └── `master_pii.json`         # Historical mapping of originals -> dummies
+│   ├── pii_page_1.json         # Input PII (page 1)
+│   ├── replace_page_1.json     # Authoritative replacements for page 1
+│   ├── page_1_sanitized.txt    # Resulting sanitized text for page 1
+│   └── master_pii.json         # Historical mapping of originals -> dummies
 ```
 
 Inputs
