@@ -1,0 +1,32 @@
+IVM- Inland Valley Medical Center
+
+Patient: Alex Brown Admit: 1/10/2025
+MRN: SWH0000000MRN Disch: 1/10/2025
+DOB/Sex: 01-01-1900 / Male FIN: ©=SWH00000000000000FIN
+
+Attending: Vasquez bornmann PA,Lisa M
+
+Medication Administration Record
+
+Medications
+
+Administration Date/Time: 1/10/2025 12:42 PST
+Medication Name: ketorolac (Toradol)
+Ingredients: keto60Sol 60 mg 2 mL
+
+Admin Details: (Auth) IntraMuscular, Right Deltoid
+
+Action Details: Order: Vasquez bornmann PA,Lisa M 1/10/2025 12:28 PST; Perform: Ligayo EDRN,Rizal Z 1/10/2025
+12:42 PST; VERIFY: Ligayo EDRN,Rizal Z 1/10/2025 12:42 PST
+
+Administration Date/Time: 1/10/2025 12:42 PST
+Medication Name: dexAMETHasone
+
+Ingredients: dexa10SoIPF 10 mg 1 mL
+
+Admin Details: (Auth) IntraMuscular, Right Deltoid
+
+Action Details: Order: Vasquez bornmann PA,Lisa M 1/10/2025 12:28 PST; Perform: Ligayo EDRN,Rizal Z 1/10/2025
+12:42 PST; VERIFY: Ligayo EDRN,Rizal Z 1/10/2025 12:42 PST
+
+Print Date/Time 2/27/2025 11:22 PST Medical Record Report Request ID: 1197040212

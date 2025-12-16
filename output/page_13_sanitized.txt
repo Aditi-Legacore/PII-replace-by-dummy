@@ -1,0 +1,80 @@
+IVM- Inland Valley Medical Center
+
+Patient: Alex Brown Admit: 1/10/2025
+MRN: SWH0000000MRN Disch: 1/10/2025
+DOB/Sex: 01-01-1900 / Male FIN: ©=SWH00000000000000FIN
+
+Attending: Vasquez bornmann PA,Lisa M
+
+Orders
+
+Order: CT Spine Lumbar w/o Contrast (CT L-Spine w/o Contrast)
+Order Comment:
+
+Order: Complete Document Medication by History
+Order Date/Time: 1/10/2025 11:48 PST
+Signed Date/Time: 1/10/2025 11:48 PST
+
+Order Status: Discontinued Department Status: Catalog Type: Patient Care Activity Type: Patient Care
+Discontinued
+
+End-state Date/Time: 1/11/2025 16:03 PST End-state Reason:
+
+Ordering Physician: SYSTEM Consulting Physician:
+
+Entered By: SYSTEM on 1/10/2025 11:48 PST
+
+Order Details: 1/10/25 11:48:12 AM PST, Routine, Stop date 1/11/25 4:03:11 PM PST
+
+Order Comment: Ordered by Discern Expert.
+
+Action Type: Discontinue Action Date/Time: 1/11/2025 16:03 PST Action Personnel: SYSTEM
+Responsible Provider/Electronically Supervising Provider: Communication Type:
+Signed by: SYSTEM
+
+Order Details: 01/10/25 11:48:12 PST, Routine, Stop date 01/10/25 11:48:12 PST
+
+Review Information:
+
+Doctor Cosign: Not Required
+
+Order Comment:
+
+Action Type: Order Action Date/Time: 1/10/2025 11:48 PST Action Personnel: SYSTEM
+Responsible Provider/Electronically Supervising Provider: Communication Type: Discern Expert
+Signed by: SYSTEM
+
+Order Details: 01/10/25 11:48:12 PST, Routine, Stop date 01/10/25 11:48:12 PST
+
+Review Information:
+
+Doctor Cosign: Not Required
+
+Order Comment: Ordered by Discern Expert.
+
+Order: Complete Document Medication by History
+Order Date/Time: 1/16/2025 18:25 PST
+Signed Date/Time: 1/17/2025 10:25 AWST
+
+Order Status: Ordered Department Status: Ordered Catalog Type: Patient Care Activity Type: Patient Care
+End-state Date/Time: 1/16/2025 18:25 PST End-state Reason:
+Ordering Physician: SYSTEM Consulting Physician:
+
+Entered By: SYSTEM on 1/17/2025 10:25 AWST
+Order Details: 1/16/25 6:25:58 PM PST, Routine, Stop date 1/16/25 6:25:58 PM PST
+Order Comment: Ordered by Discern Expert.
+
+Action Type: Order Action Date/Time: 1/17/2025 10:25 Action Personnel: SYSTEM
+AWST
+Responsible Provider/Electronically Supervising Provider: Communication Type: Discern Expert
+
+Signed by: SYSTEM
+
+Order Details: 01/16/25 18:25:58 PST, Routine, Stop date 01/16/25 18:25:58 PST
+Review Information:
+
+Doctor Cosign: Not Required
+
+Order Comment: Ordered by Discern Expert.
+
+Print Date/Time 2/27/2025 11:22 PST Medical Record Report Request ID: 1197040212

@@ -1,0 +1,83 @@
+IVM- Inland Valley Medical Center
+
+Patient: Alex Brown Admit: 1/10/2025
+MRN: SWH0000000MRN Disch: 1/10/2025
+DOB/Sex: 01-01-1900 / Male FIN: ©=SWH00000000000000FIN
+
+Attending: Vasquez bornmann PA,Lisa M
+
+Orders
+
+Order: CT Spine Lumbar w/o Contrast (CT L-Spine w/o Contrast)
+Order Date/Time: 1/10/2025 12:28 PST
+Signed Date/Time: 1/10/2025 12:28 PST
+
+Order Status: Completed Department Status: Catalog Type: Radiology Activity Type: Radiology
+Completed
+
+End-state Date/Time: 1/10/2025 13:33 PST End-state Reason:
+
+Ordering Physician: Vasquez bornmann PA,Lisa M Consulting Physician:
+
+Entered By: Vasquez bornmann PA,Lisa M on 1/10/2025 12:28 PST
+Order Details: 1/10/25 12:28:00 PM PST, Stat, Injury, Back, Transport Mode: Stretcher
+Order Comment:
+
+Action Type: Complete Action Date/Time: 1/10/2025 13:33 PST Action Personnel: Toensing MD,
+Christopher C
+Responsible Provider/Electronically Supervising Provider: Communication Type: Written
+
+Signed by: Vasquez bornmann PA,Lisa
+M
+
+Order Details: 01/10/25 12:28:00 PST, Stat, Injury, Back, Transport Mode: Stretcher
+Review Information:
+
+Doctor Cosign: Not Required
+
+Order Comment:
+
+Action Type: Status Change Action Date/Time: 1/10/2025 13:18 PST Action Personnel: Hossainzada CT
+Tech,Mohammad
+Responsible Provider/Electronically Supervising Provider: Communication Type: Written
+
+Signed by: Vasquez bornmann PA,Lisa
+M
+
+Order Details: 01/10/25 12:28:00 PST, Stat, Injury, Back, Transport Mode: Stretcher
+Review Information:
+
+Doctor Cosign: Not Required
+
+Order Comment:
+
+Action Type: Status Change Action Date/Time: 1/10/2025 13:08 PST Action Personnel: Williams RAD TECH,
+Timothy
+
+Responsible Provider/Electronically Supervising Provider: Communication Type: Written
+
+Signed by: Vasquez bornmann PA,Lisa
+
+M
+
+Order Details: 01/10/25 12:28:00 PST, Stat, Injury, Back, Transport Mode: Stretcher
+Review Information:
+
+Doctor Cosign: Not Required
+
+Order Comment:
+
+Action Type: Order Action Date/Time: 1/10/2025 12:29 PST Action Personnel: Vasquez bornmann
+PA,Lisa M
+Responsible Provider/Electronically Supervising Provider: Communication Type: Written
+
+Signed by: Vasquez bornmann PA,Lisa
+M
+
+Order Details: 01/10/25 12:28:00 PST, Stat, Injury, Back, Transport Mode: Stretcher
+Review Information:
+
+Nurse Review: No Longer Needing Review, SYSTEM on 1/31/2025 01:17 PST
+Doctor Cosign: Not Required
+
+Print Date/Time 2/27/2025 11:22 PST Medical Record Report Request ID: 1197040212

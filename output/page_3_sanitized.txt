@@ -1,0 +1,43 @@
+IVM- Inland Valley Medical Center
+
+Patient: Alex Brown
+
+MRN: SWH0000000MRN
+
+DOB/Sex: 01-01-1900 / Male
+
+Attending: Vasquez bornmann PA,Lisa M
+
+DOCUMENT NAME:
+SERVICE DATE/TIME:
+RESULT STATUS:
+PERFORM INFORMATION:
+SIGN INFORMATION:
+
+eCoding Summary_20250116.pdf
+
+Please click on link to see image.
+
+Print Date/Time 2/27/2025 11:22 PST
+
+Coding
+
+Coding Summ
+
+Admit: 1/10/2025
+
+Disch: 1/10/2025
+
+FIN: ©=SWH00000000000000FIN
+
+ary
+
+1/16/2025 00:00 PST
+
+Auth (Verified)
+
+Medical Record
+
+Report Request ID:
+
+1197040212

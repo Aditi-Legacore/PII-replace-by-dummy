@@ -1,0 +1,50 @@
+IVM- Inland Valley Medical Center
+
+Patient: Alex Brown Admit: 1/10/2025
+MRN: SWH0000000MRN Disch: 1/10/2025
+DOB/Sex: 01-01-1900 / Male FIN: ©=SWH00000000000000FIN
+
+Attending: Vasquez bornmann PA,Lisa M
+
+Assessment Forms
+
+DOCUMENT TYPE: ED Vital Signs and Pain - Text
+
+SERVICE DATE/TIME: 1/10/2025 13:59 PST
+
+RESULT STATUS: Auth (Verified)
+
+PERFORMED INFORMATION: Ligayo EDRN,Rizal Z (1/10/2025 13:59 PST)
+SIGNED INFORMATION: Ligayo EDRN,Rizal Z (1/10/2025 13:59 PST)
+
+ED Reassess / Vital Signs and Pain Adult Entered On: 1/10/2025 14:00 PST
+Performed On: 1/10/2025 13:59 PST by Ligayo EDRN, Rizal Z
+
+ED Nurse Reassessment
+Nursing Note : left wrist iv removed intact, denies any numbness or tingling sensation
+Ligayo EDRN, Rizal Z - 1/10/2025 13:59 PST
+Discharge Care Plan
+Mode of Discharge : Ambulates without assistance
+Discharge Transportation : Private vehicle
+Accompanied By : Family member
+Ligayo EDRN, Rizal Z - 1/10/2025 13:59 PST
+
+DOCUMENT TYPE: QM SEP-1 Triage Screen-Text
+
+SERVICE DATE/TIME: 1/10/2025 12:11 PST
+
+RESULT STATUS: Auth (Verified)
+
+PERFORMED INFORMATION: Ligayo EDRN,Rizal Z (1/10/2025 12:11 PST)
+SIGNED INFORMATION: Ligayo EDRN,Rizal Z (1/10/2025 12:11 PST)
+
+QM SEP-1 Triage Screen v5.0 Entered On: 1/10/2025 12:11 PST
+Performed On: 1/10/2025 12:11 PST by Ligayo EDRN, Rizal Z
+
+QM SEP-1 Triage Screen
+Reg SEP Susp Infection UHS : No
+Pt meets criteria for sepsis : No positive SIRS data available.
+Pt meets criteria for severe sepsis : No severe sepsis data available.
+Ligayo EDRN, Rizal Z - 1/10/2025 12:11 PST
+
+Print Date/Time 2/27/2025 11:22 PST Medical Record Report Request ID: 1197040212

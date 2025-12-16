@@ -1,0 +1,77 @@
+Patient Name: Alex Brown MRN: SWH0000000MRN
+Date of Birth: 10/4/1992 FIN: SWHO00000000000000FIN
+
+Attachment(s): 1/16/2025 00:00 PST eCoding Summary_20250116.pdf
+
+SWHC-Alex Brown-Enc #0000000000FIN-OPT-IED-1/10/2025 eCoding Summary - 1/16/2025 - 1 pg
+
+Southwest Healthcare System
+36485 Inland Valley Dr
+Wildomar, CA 92595-9700
+
+Outpatient Coding Summary
+
+Account Number: 0000000000FIN
+
+Patient Name Sex Birth Date Age MR Number
+
+Alex Brown Male 10/04/1992 32 000000MRN
+
+Admit Date Discharge Date LOS Financial Class Disposition
+
+01/10/25 11:25 AM 01/10/25 02:42 PM 1 UNINSURED ADMIT 01 AHR ROUTINE DISCHARGE
+Attending Physician Coder Patient Type
+
+101261SWHS- VASQUEZ BORNMANN,LISA M Saul, Mervin OP-TRAUMA/ER
+
+ICD-10 Admit Diagnosis
+M5450 Low back pain, unspecified
+
+ICD-10 Diagnosis Reason for Visit
+
+M5450 Low back pain, unspecified
+ICD-10 Primary Diagnosis
+
+M5450 Low back pain, unspecified
+ICD-10 Secondary Diagnosis
+
+V4352XA Car driver injured in collision with other type car in traffic accident, initial encounter
+Y92411 Interstate highway as the place of occurrence of the external cause
+
+CPT Procedures and Modifiers
+
+Provider Date
+
+72128 CT THORACIC SPINE W/O CONTRAST MATERIAL 01/10/25
+72131 CT LUMBAR SPINE W/O CONTRAST MATERIAL 01/10/25
+96372 ~POAREQ:0 01/10/25
+99285 -25 EMERGENCY DEPARTMENT VISIT HIGH MDM; (-25 Signif E/M 01/10/25
+J1100 Dexamethosone sodium phos 1 mg 01/10/25
+J1885 Ketorolac tromethamine inj 01/10/25
+
+CPT APC Text CMS Reimb
+
+08005 CT and CTA without Contrast Composite 196.26
+19937 Packaged service included in Composite APC rate ; 0.00
+19936 Conditionally packaged service - item packaged into APC 0.00
+rate 535.88
+05025 Level 5 Type A ED Visits 0.00
+19900 Incidental services packaged into APC rate 0.53
+00764 Ketorolac tromethamine inj
+
+APC Total Reimbursement APC Total Weight Total CMS Reimbursement
+
+Bill Type Claim Type Claim Disposition Condition Code
+
+131 Condition Code not assigned
+
+* * MR number: 000000MRN Account number: 0000000000FIN
+8049 Admit date: 01/10/25 11:25 AM Discharge date: 01/10/25 02:42 PM
+
+Outpatient Coding Summary = ©fidential Page 1 eft
+
+3M HRM APCFm_RFV_Port.doc 07/11/08
+
+Page 1 of 1
+
+Facility: IVM Center

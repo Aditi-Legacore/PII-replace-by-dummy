@@ -1,0 +1,19 @@
+IVM- Inland Valley Medical Center
+
+Patient: Alex Brown Admit: 1/10/2025
+MRN: SWH0000000MRN Disch: 1/10/2025
+DOB/Sex: 01-01-1900 / Male FIN: ©=SWH00000000000000FIN
+
+Attending: Vasquez bornmann PA,Lisa M
+
+Emergency Department
+
+Primary Pain
+Pain Assessment Tool Utilized : Numeric
+Numeric Pain Scale: 7
+Jensen EDRN, Stephanie - 1/10/2025 11:27 PST
+
+Electronically Signed By: Jensen, Stephanie EDRN
+On: 01.10.2025 11:27 PST
+
+Print Date/Time 2/27/2025 11:22 PST Medical Record Report Request ID: 1197040212

@@ -1,0 +1,58 @@
+IVM- Inland Valley Medical Center
+
+Patient: Alex Brown Admit: 1/10/2025
+MRN: SWH0000000MRN Disch: 1/10/2025
+DOB/Sex: 01-01-1900 / Male FIN: ©=SWH00000000000000FIN
+
+Attending: Vasquez bornmann PA,Lisa M
+
+Orders
+
+Order: Communication Documentation
+
+Order Date/Time: 1/10/2025 11:28 PST
+
+Signed Date/Time: 1/10/2025 11:28 PST
+
+Order Status: Discontinued Department Status: Catalog Type: Patient Care Activity Type:
+Discontinued Asmt/Tx/Monitoring
+
+End-state Date/Time: 1/10/2025 18:04 PST End-state Reason:
+
+Ordering Physician: SYSTEM Consulting Physician:
+
+Entered By: SYSTEM on 1/10/2025 11:28 PST
+
+Order Details: 1/10/25 11:28:55 AM PST, Routine
+
+Order Comment: Order placed by Discern Rule
+
+Action Type: Discontinue Action Date/Time: 1/10/2025 18:04 PST Action Personnel: SYSTEM
+
+Responsible Provider/Electronically Supervising Provider: Communication Type:
+
+Signed by: SYSTEM
+
+Order Details: 01/10/25 11:28:55 PST, Routine
+
+Review Information:
+
+Doctor Cosign: Not Required
+
+Order Comment:
+
+Action Type: Order Action Date/Time: 1/10/2025 11:28 PST Action Personnel: SYSTEM
+
+Responsible Provider/Electronically Supervising Provider: Communication Type: Discern Expert
+
+Signed by: SYSTEM
+
+Order Details: 01/10/25 11:28:55 PST, Routine
+
+Review Information:
+
+Doctor Cosign: Not Required
+
+Order Comment: Order placed by Discern Rule
+
+Print Date/Time 2/27/2025 11:22 PST Medical Record Report Request ID: 1197040212

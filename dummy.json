@@ -1,0 +1,10 @@
+{
+  "Patient_Name": ["Alex Brown"],
+  "Address": ["123 Dummy Street, Dummy City"],
+  "Phone_Number": ["9000000001"],
+  "SSN": ["999-99-9999"],
+  "MRN": ["000000MRN"],
+  "DOB/Sex": ["01-01-1900 / Male"],
+  "Attending": ["Vasquez bornmann PA,Lisa M"],
+  "FIN": ["0000000000FIN"]
+}

@@ -1,0 +1,85 @@
+Patient: Alex Brown
+MRN: SWH0000000MRN
+DOB/Sex: 01-01-1900 / Male
+
+Attending: Vasquez bornmann PA,Lisa M
+
+DOCUMENT TYPE:
+
+SERVICE DATE/TIME:
+RESULT STATUS:
+PERFORMED INFORMATION:
+SIGNED INFORMATION:
+
+IVM- Inland Valley Medical Center
+
+Admit: 1/10/2025
+Disch: 1/10/2025
+FIN: ©=SWH00000000000000FIN
+
+ED Nursing Documentation
+
+Triage Note
+
+1/10/2025 12:10 PST
+
+Auth (Verified)
+
+Ligayo EDRN,Rizal Z (1/10/2025 12:10 PST)
+Ligayo EDRN,Rizal Z (1/10/2025 12:10 PST)
+
+ED Abuse/Neglect Adult Entered On: 1/10/2025 12:10 PST
+Performed On: 1/10/2025 12:10 PST by Ligayo EDRN, Rizal Z
+
+Abuse/Neglect Assessment
+Threatened/Physically Hurt in past year :
+Abuse and Neglect Types : None
+
+ED DV Harm or Neglect Question : No
+ED DV Safe Place Verification: Yes
+
+Electronically Signed By: Ligayo, Rizal EDRN
+On: 01.10.2025 12:10 PST
+
+DOCUMENT TYPE:
+
+SERVICE DATE/TIME:
+RESULT STATUS:
+PERFORMED INFORMATION:
+SIGNED INFORMATION:
+
+Ligayo EDRN, Rizal Z - 1/10/2025 12:10 PST
+
+Triage Note
+
+1/10/2025 12:10 PST
+
+Auth (Verified)
+
+Ligayo EDRN,Rizal Z (1/10/2025 12:10 PST)
+Ligayo EDRN,Rizal Z (1/10/2025 12:10 PST)
+
+ED Triage RFV/Problems Entered On: 1/10/2025 12:10 PST
+Performed On: 1/10/2025 12:10 PST by Ligayo EDRN, Rizal Z
+
+Reason for Visit/Medical History ED
+Reviewed Past Medical HX with Patient :
+
+Problems(Active)
+
+Ligayo EDRN, Rizal Z - 1/10/2025 12:10 PST
+(As Of: 1/10/2025 12:10:18 PST)
+
+No Chronic Problems (Cerner Name of Problem: No Chronic Problems ; Recorder: Ligayo
+:NKP ) EDRN, Rizal Z; Code: NKP ; Last Updated: 1/10/2025 12:10
+
+PST ; Life Cycle Date:
+Vocabulary: Cerner
+
+Diagnoses(Active)
+
+Print Date/Time 2/27/2025 11:22 PST
+
+1/10/2025 ; Life Cycle Status: Active ;
+
+Medical Record Report Request ID: 1197040212
