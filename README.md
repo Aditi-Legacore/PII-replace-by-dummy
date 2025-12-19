@@ -7,7 +7,7 @@ Overview
 This project implements a deterministic, auditable, page-scoped PII sanitization pipeline for PDF documents using OCR.
 
 Key goals:
-- Replace only values listed in page-level PII files (`pii_page_n.json`).
+- Replace only values listed in page-level PII files (`combined_pii.json`).
 - Ensure the same original value always maps to the same dummy value.
 - Keep replacements page-scoped to avoid cross-page contamination.
 - Produce persistent JSON artifacts for auditing.
@@ -39,7 +39,7 @@ project/
 Inputs
 ------
 1) PDF file (original document) — OCR step extracts raw text per page.
-2) `pii_page_n.json` — page-scoped PII values (either produced manually or by an extractor).
+2) `combined_pii.json` — page-scoped PII values (either produced manually or by an extractor).
 	 Example:
 
 ```
@@ -84,7 +84,7 @@ Outputs
 Processing Flow
 ---------------
 1. OCR: extract raw page text using Tesseract (or pre-extracted OCR text).
-2. Load Page PII: read `pii_page_n.json` and use values only (never PII keys) to drive replacements.
+2. Load Page PII: read `combined_pii.json` and use values only (never PII keys) to drive replacements.
 3. Build `replace_page_n.json`:
 	 - If a value is already present in `master_pii.json`, reuse its dummy.
 	 - Otherwise assign a new dummy from `dummy.json` and update `master_pii.json`.
@@ -92,7 +92,7 @@ Processing Flow
 	 - Replace PII values in the page's text, matching values even when embedded inside longer strings.
 	 - Perform replacements in descending length order to avoid partial matches.
 5. Enforced Page-Wise Replacement:
-	 - Re-scan `page_n_sanitized.txt` and ensure only values from `pii_page_n.json` were replaced.
+	 - Re-scan `page_n_sanitized.txt` and ensure only values from `combined_pii.json` were replaced.
 	 - Use only `replace_page_n.json` when re-applying replacements for that page.
 
 Safety Guarantees
@@ -124,7 +124,7 @@ How to Run
 ----------
 Ensure the following exist in the project root:
 - `dummy.json` populated with dummy pools
-- `pii_page_n.json` files for pages to be sanitized
+- `combined_pii.json` files for pages to be sanitized
 
 Then run:
 
@@ -134,8 +134,8 @@ python personal_info_replace_by_dummy.py
 
 What the script guarantees
 -------------------------
-- If a value appears in `pii_page_n.json`, it WILL be replaced in that page's sanitized output.
-- If a value does NOT appear in `pii_page_n.json`, it WILL NOT be touched.
+- If a value appears in `combined_pii.json`, it WILL be replaced in that page's sanitized output.
+- If a value does NOT appear in `combined_pii.json`, it WILL NOT be touched.
 
 This behavior ensures deterministic, auditable, and page-scoped sanitization suitable for compliance workflows.
 

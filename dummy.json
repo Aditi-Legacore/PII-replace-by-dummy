@@ -1,10 +1,17 @@
 {
-  "Patient_Name": ["Alex Brown"],
+  "Patient Name": ["Alex Brown"],
+  "Doctor": ["Dr. John Smith"],
   "Address": ["123 Dummy Street, Dummy City"],
-  "Phone_Number": ["9000000001"],
+  "Patient's Phone Number": ["9000000001"],
+  "Patient Care Report Number": ["00000000000000000000000000000000"],
   "SSN": ["999-99-9999"],
   "MRN": ["000000MRN"],
   "DOB/Sex": ["01-01-1900 / Male"],
+  "DOB": ["01-01-1900"],
+  "Date of Birth": ["01-01-1900"],
   "Attending": ["Vasquez bornmann PA,Lisa M"],
-  "FIN": ["0000000000FIN"]
+  "FIN": ["0000000000FIN"],
+  "Hospital Address": ["Santa Clara Valley Medical Center, 751 S Bascom Ave, San Jose, CA 95128"],
+  "ID": ["30000000000"],
+  "Accession": ["1HS0000000"]
 }

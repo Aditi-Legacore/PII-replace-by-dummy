@@ -1,9 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[ ]:
-
-
 import os
 import re
 import json
@@ -11,6 +8,7 @@ import fitz
 import pdfplumber
 import pytesseract
 import random
+import sys
 
 # -------------------------------------------------
 # TESSERACT PATH (WINDOWS)
@@ -34,10 +32,10 @@ def clean(text):
 # JSON HELPERS
 # -------------------------------------------------
 def load_json(path, default=None):
-    if os.path.exists(path):
-        with open(path, "r", encoding="utf-8") as f:
-            return json.load(f)
-    return default if default is not None else {}
+    if not os.path.exists(path):
+        return default if default is not None else {}
+    with open(path, "r", encoding="utf-8") as f:
+        return json.load(f)
 
 def save_json(path, data):
     with open(path, "w", encoding="utf-8") as f:
@@ -53,6 +51,19 @@ def extract_text_from_page(pdf_path, page_index):
         return clean(pytesseract.image_to_string(img.original))
 
 # -------------------------------------------------
+# PROGRESS BAR
+# -------------------------------------------------
+def print_progress_bar(current, total, bar_length=30):
+    progress = current / total
+    filled = int(bar_length * progress)
+    bar = "█" * filled + "░" * (bar_length - filled)
+    print(
+        f"\rProcessing PDF: [{bar}] {current}/{total} pages",
+        end="",
+        flush=True
+    )
+
+# -------------------------------------------------
 # PICK DUMMY VALUE
 # -------------------------------------------------
 def pick_dummy(field, dummy_pool, used_dummies):
@@ -64,7 +75,7 @@ def pick_dummy(field, dummy_pool, used_dummies):
     return random.choice(unused if unused else options)
 
 # -------------------------------------------------
-# UPDATE MASTER + CREATE REPLACE_PAGE_N
+# BUILD REPLACE PAGE + UPDATE MASTER
 # -------------------------------------------------
 def build_replace_page(page_no, extracted_pii, dummy_pool, master_pii):
     page_key = f"page_{page_no}"
@@ -79,7 +90,7 @@ def build_replace_page(page_no, extracted_pii, dummy_pool, master_pii):
     for field, original in extracted_pii.items():
         dummy = None
 
-        # reuse existing dummy if original already mapped
+        # reuse existing dummy if already mapped
         for page in master_pii.values():
             for entry in page.values():
                 if entry["original"] == original:
@@ -101,7 +112,7 @@ def build_replace_page(page_no, extracted_pii, dummy_pool, master_pii):
     return replace_page
 
 # -------------------------------------------------
-# SAFE REPLACEMENT (EMBEDDED STRINGS OK)
+# SAFE TEXT REPLACEMENT
 # -------------------------------------------------
 def replace_from_map(text, replace_map):
     entries = sorted(
@@ -124,100 +135,86 @@ def replace_from_map(text, replace_map):
     return text
 
 # -------------------------------------------------
-# SECOND PASS: STRICTLY USE replace_page_n.json
-# -------------------------------------------------
-def final_replace_using_replace_page(page_no, output_dir):
-    pii_path = os.path.join(output_dir, f"pii_page_{page_no}.json")
-    replace_path = os.path.join(output_dir, f"replace_page_{page_no}.json")
-    txt_path = os.path.join(output_dir, f"page_{page_no}_sanitized.txt")
-
-    if not (os.path.exists(pii_path)
-            and os.path.exists(replace_path)
-            and os.path.exists(txt_path)):
-        return
-
-    pii_values = load_json(pii_path)
-    replace_page = load_json(replace_path)
-
-    with open(txt_path, "r", encoding="utf-8") as f:
-        text = f.read()
-
-    for value in pii_values.values():
-        for entry in replace_page.values():
-            if entry["original"] == value:
-                text = re.sub(
-                    re.escape(value),
-                    entry["dummy"],
-                    text,
-                    flags=re.IGNORECASE
-                )
-
-    with open(txt_path, "w", encoding="utf-8") as f:
-        f.write(text)
-
-    print(f"✔ Final enforced replacement done for page {page_no}")
-
-# -------------------------------------------------
 # MAIN PIPELINE
 # -------------------------------------------------
-def process_pdf(pdf_path, output_dir, dummy_file):
+def process_pdf(pdf_path, output_dir, dummy_file, combined_pii_file):
     os.makedirs(output_dir, exist_ok=True)
 
     dummy_pool = load_json(dummy_file)
-    master_path = os.path.join(output_dir, "master_pii.json")
-    master_pii = load_json(master_path, {})
+
+    combined_pii_file = os.path.abspath(combined_pii_file)
+    combined_pii = load_json(combined_pii_file)
+
+    if not combined_pii:
+        print("❌ combined_pii.json is EMPTY or NOT FOUND")
+        sys.exit(1)
 
     doc = fitz.open(pdf_path)
+    total_pages = len(doc)
 
-    for i in range(len(doc)):
+    master_pii = {}
+    replace_combine = {}
+    combined_sanitized_pages = []
+
+    for i in range(total_pages):
         page_no = i + 1
-        print(f"\nProcessing page {page_no}")
+        print_progress_bar(page_no, total_pages)
 
         text = extract_text_from_page(pdf_path, i)
 
-        pii_path = os.path.join(output_dir, f"pii_page_{page_no}.json")
-        extracted_pii = load_json(pii_path)
-
-        if not extracted_pii:
-            print("⚠ No pii_page file")
-            continue
-
-        # 1️⃣ Build replace_page_n.json + update master
         replace_page = build_replace_page(
             page_no,
-            extracted_pii,
+            combined_pii,
             dummy_pool,
             master_pii
         )
 
-        save_json(
-            os.path.join(output_dir, f"replace_page_{page_no}.json"),
-            replace_page
-        )
-        save_json(master_path, master_pii)
-
-        # 2️⃣ First sanitization
         sanitized = replace_from_map(text, replace_page)
-        sanitized_path = os.path.join(
-            output_dir, f"page_{page_no}_sanitized.txt"
+
+        # enforced second pass
+        for value in combined_pii.values():
+            for entry in replace_page.values():
+                if entry["original"] == value:
+                    sanitized = re.sub(
+                        re.escape(value),
+                        entry["dummy"],
+                        sanitized,
+                        flags=re.IGNORECASE
+                    )
+
+        combined_sanitized_pages.append(
+            f"\n\n===== PAGE {page_no} =====\n\n{sanitized}"
         )
 
-        with open(sanitized_path, "w", encoding="utf-8") as f:
-            f.write(sanitized)
+        replace_combine[f"page_{page_no}"] = replace_page
 
-        # 3️⃣ Enforced second-pass replacement
-        final_replace_using_replace_page(page_no, output_dir)
+    print()  # newline after progress bar
+
+    # -------------------------------------------------
+    # WRITE FINAL OUTPUTS
+    # -------------------------------------------------
+    save_json(os.path.join(output_dir, "master_pii.json"), master_pii)
+    save_json(os.path.join(output_dir, "replace_combine.json"), replace_combine)
+
+    with open(
+        os.path.join(output_dir, "combine_sanitized.txt"),
+        "w",
+        encoding="utf-8"
+    ) as f:
+        f.write("".join(combined_sanitized_pages))
 
     print("\n✅ PIPELINE COMPLETED SUCCESSFULLY")
+    print("📄 combine_sanitized.txt")
+    print("📄 replace_combine.json")
+    print("📄 master_pii.json")
 
 # -------------------------------------------------
 # RUN
 # -------------------------------------------------
 if __name__ == "__main__":
     process_pdf(
-        # pdf_path=r"D:\py-tesseract\BF - James Freer\Arranged Medical Records and Bills\Medical Provider Records\MR.pdf",
-        pdf_path=r"D:\\py-tesseract\\PII replace by dummy\\MR.pdf",
+        pdf_path=r"D:\\py-tesseract\\BF - James Freer\\Arranged Medical Records and Bills\\Medical Provider Records\\2025.01.10 Inland Valley Medical Center - Mark up and comment done.pdf",
         output_dir="output",
-        dummy_file="dummy.json"
+        dummy_file="dummy.json",
+        combined_pii_file=r"D:\\py-tesseract\\PII replace by dummy\\output\\combined_pii.json"
     )
-
