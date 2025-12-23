@@ -9,6 +9,7 @@ import pdfplumber
 import pytesseract
 import random
 import sys
+from rapidfuzz import fuzz
 
 # -------------------------------------------------
 # TESSERACT PATH (WINDOWS)
@@ -27,6 +28,25 @@ def clean(text):
     text = re.sub(r" +", " ", text)
     text = re.sub(r"\n{3,}", "\n\n", text)
     return text.strip()
+
+# -------------------------------------------------
+# NORMALIZE TEXT (STRING OR LIST SAFE)
+# -------------------------------------------------
+def normalize_text(text):
+    if not text:
+        return ""
+
+    # ✅ FIX: handle list of variants
+    if isinstance(text, list):
+        text = " ".join(map(str, text))
+
+    text = text.lower()
+    text = re.sub(r"[^a-z]", " ", text)
+    text = re.sub(r"\s+", " ", text)
+    return text.strip()
+
+def tokenize(text):
+    return set(normalize_text(text).split())
 
 # -------------------------------------------------
 # JSON HELPERS
@@ -87,16 +107,29 @@ def build_replace_page(page_no, extracted_pii, dummy_pool, master_pii):
         for v in p.values()
     }
 
+    # 🔑 token → dummy map (from previous pages)
+    token_dummy_map = {}
+    for page in master_pii.values():
+        for entry in page.values():
+            for t in tokenize(entry["original"]):
+                if len(t) >= 3:
+                    token_dummy_map[t] = entry["dummy"]
+
     for field, original in extracted_pii.items():
+        orig_tokens = tokenize(original)
         dummy = None
 
-        # reuse existing dummy if already mapped
-        for page in master_pii.values():
-            for entry in page.values():
-                if entry["original"] == original:
-                    dummy = entry["dummy"]
-                    break
-            if dummy:
+        # 🔥 TOKEN-LEVEL REUSE WITH FUZZY MATCHING
+        for t in orig_tokens:
+            best_match = None
+            best_score = 0
+            for existing_token in token_dummy_map:
+                score = fuzz.ratio(t, existing_token)
+                if score > best_score and score >= 80:  # threshold 80%
+                    best_score = score
+                    best_match = existing_token
+            if best_match:
+                dummy = token_dummy_map[best_match]
                 break
 
         if not dummy:
@@ -112,14 +145,22 @@ def build_replace_page(page_no, extracted_pii, dummy_pool, master_pii):
     return replace_page
 
 # -------------------------------------------------
-# SAFE TEXT REPLACEMENT
+# SAFE TEXT REPLACEMENT (LIST AWARE)
 # -------------------------------------------------
 def replace_from_map(text, replace_map):
-    entries = sorted(
-        replace_map.values(),
-        key=lambda x: len(x["original"]),
-        reverse=True
-    )
+    entries = []
+
+    for e in replace_map.values():
+        original = e["original"]
+
+        # ✅ expand list variants
+        if isinstance(original, list):
+            for v in original:
+                entries.append({"original": v, "dummy": e["dummy"]})
+        else:
+            entries.append(e)
+
+    entries.sort(key=lambda x: len(x["original"]), reverse=True)
 
     for e in entries:
         if not e["original"].strip():
@@ -134,6 +175,75 @@ def replace_from_map(text, replace_map):
 
     return text
 
+def extract_dummy_lastname(dummy):
+    parts = dummy.split()
+    return parts[1] if len(parts) > 1 else dummy
+
+# -------------------------------------------------
+# AGGRESSIVE NAME VARIANT REPLACEMENT
+# -------------------------------------------------
+def replace_name_variants(text, master_pii, page_key, replace_combine):
+    token_dummy_map = {}
+
+    for page in master_pii.values():
+        for entry in page.values():
+            for t in tokenize(entry["original"]):
+                if len(t) >= 3:
+                    token_dummy_map[t] = entry["dummy"]
+
+    for token, dummy in token_dummy_map.items():
+        dummy_last = extract_dummy_lastname(dummy)
+
+        # Mr. Handrop → Mr. <dummy_lastname>
+        pattern = re.compile(
+            rf"\b(mr|mrs|ms|dr)\.?\s+{re.escape(token)}\b",
+            flags=re.IGNORECASE
+        )
+
+        def _repl(match):
+            title = match.group(1)
+            replaced = f"{title}. {dummy_last}"
+
+            # ✅ add separate object into master + replace_combine
+            master_pii[page_key][f"{title}_variant_{token}"] = {
+                "original": match.group(0),
+                "dummy": replaced
+            }
+
+            if f"{title}_variant_{token}" not in replace_combine:
+                replace_combine[f"{title}_variant_{token}"] = {
+                    "original": match.group(0),
+                    "dummy": replaced
+                }
+
+            return replaced
+
+        text = pattern.sub(_repl, text)
+
+    return text
+
+def get_output_paths(pdf_path):
+    pdf_dir = os.path.dirname(pdf_path)
+    pdf_name = os.path.splitext(os.path.basename(pdf_path))[0]
+    safe_name = re.sub(r"\s+", "_", pdf_name)
+
+    out_dir = os.path.join(pdf_dir, "extracted_files")
+    os.makedirs(out_dir, exist_ok=True)
+
+    return {
+        "dir": out_dir,
+        "sanitized_txt": os.path.join(
+            out_dir, f"{safe_name}_combine_sanitized.txt"
+        ),
+        "replace_combine": os.path.join(
+            out_dir, f"{safe_name}_replace_combine.json"
+        ),
+        "master_pii": os.path.join(
+            out_dir, f"{safe_name}_master_pii.json"
+        ),
+    }
+
+
 # -------------------------------------------------
 # MAIN PIPELINE
 # -------------------------------------------------
@@ -141,8 +251,6 @@ def process_pdf(pdf_path, output_dir, dummy_file, combined_pii_file):
     os.makedirs(output_dir, exist_ok=True)
 
     dummy_pool = load_json(dummy_file)
-
-    combined_pii_file = os.path.abspath(combined_pii_file)
     combined_pii = load_json(combined_pii_file)
 
     if not combined_pii:
@@ -170,28 +278,25 @@ def process_pdf(pdf_path, output_dir, dummy_file, combined_pii_file):
         )
 
         sanitized = replace_from_map(text, replace_page)
-
-        # enforced second pass
-        for value in combined_pii.values():
-            for entry in replace_page.values():
-                if entry["original"] == value:
-                    sanitized = re.sub(
-                        re.escape(value),
-                        entry["dummy"],
-                        sanitized,
-                        flags=re.IGNORECASE
-                    )
+        sanitized = replace_name_variants(
+            sanitized,
+            master_pii,
+            page_key=f"page_{page_no}",
+            replace_combine=replace_combine
+        )
 
         combined_sanitized_pages.append(
             f"\n\n===== PAGE {page_no} =====\n\n{sanitized}"
         )
 
-        replace_combine[f"page_{page_no}"] = replace_page
+        for field, entry in replace_page.items():
+            if field not in replace_combine:
+                replace_combine[field] = entry
 
-    print()  # newline after progress bar
+    print()
 
     # -------------------------------------------------
-    # WRITE FINAL OUTPUTS
+    # WRITE OUTPUTS
     # -------------------------------------------------
     save_json(os.path.join(output_dir, "master_pii.json"), master_pii)
     save_json(os.path.join(output_dir, "replace_combine.json"), replace_combine)
@@ -203,17 +308,27 @@ def process_pdf(pdf_path, output_dir, dummy_file, combined_pii_file):
     ) as f:
         f.write("".join(combined_sanitized_pages))
 
+        paths = get_output_paths(pdf_path)
+
+    save_json(paths["master_pii"], master_pii)
+    save_json(paths["replace_combine"], replace_combine)
+
+    with open(paths["sanitized_txt"], "w", encoding="utf-8") as f:
+        f.write("".join(combined_sanitized_pages))
+
     print("\n✅ PIPELINE COMPLETED SUCCESSFULLY")
-    print("📄 combine_sanitized.txt")
-    print("📄 replace_combine.json")
-    print("📄 master_pii.json")
+    print(f"📄 {os.path.basename(paths['sanitized_txt'])}")
+    print(f"📄 {os.path.basename(paths['replace_combine'])}")
+    print(f"📄 {os.path.basename(paths['master_pii'])}")
 
 # -------------------------------------------------
 # RUN
 # -------------------------------------------------
 if __name__ == "__main__":
     process_pdf(
-        pdf_path=r"D:\\py-tesseract\\BF - James Freer\\Arranged Medical Records and Bills\\Medical Provider Records\\2025.01.10 Inland Valley Medical Center - Mark up and comment done.pdf",
+        pdf_path=r"D:\\py-tesseract\\BF - James Freer\\Arranged Medical Records and Bills\\Medical Provider Records\\2023.11.16 Senta Neurosurgery.pdf",
+        # pdf_path=r"D:\\py-tesseract\\BF - James Freer\\Arranged Medical Records and Bills\\Medical Provider Records\\MR.pdf",
+        # pdf_path=r"D:\\py-tesseract\\BF - James Freer\\Arranged Medical Records and Bills\\Medical Provider Records\\2024.06.30 Big Bear Fire Department.pdf",
         output_dir="output",
         dummy_file="dummy.json",
         combined_pii_file=r"D:\\py-tesseract\\PII replace by dummy\\output\\combined_pii.json"

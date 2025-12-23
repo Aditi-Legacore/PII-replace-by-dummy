@@ -1,0 +1,40 @@
+{
+    "page_1": {
+        "Patient Name": {
+            "original": "Handrop, Ronald S",
+            "dummy": "Alex Brown"
+        },
+        "MRN": {
+            "original": "20211",
+            "dummy": "000000MRN"
+        },
+        "RE": {
+            "original": " HANDRODP, Ronald",
+            "dummy": "REDACTED"
+        },
+        "Date of Birth": {
+            "original": "12/7/1954",
+            "dummy": "01-01-1900"
+        },
+        "DOB": {
+            "original": "12/07/1954",
+            "dummy": "01-01-1900"
+        },
+        "Hospital Address": {
+            "original": "SENTA NEUROSURGERY",
+            "dummy": "Santa Clara Valley Medical Center, 751 S Bascom Ave, San Jose, CA 95128"
+        },
+        "Doctor Name": {
+            "original": "SANJAY GHOSH, MD",
+            "dummy": "Dr. John Smith"
+        },
+        "Mr_variant_handrop": {
+            "original": "Mr. Handrop",
+            "dummy": "Mr. Brown"
+        },
+        "Dr_variant_ghosh": {
+            "original": "Dr. Ghosh",
+            "dummy": "Dr. John"
+        }
+    }
+}
