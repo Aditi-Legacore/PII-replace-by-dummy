@@ -222,6 +222,52 @@ def replace_name_variants(text, master_pii, page_key, replace_combine):
 
     return text
 
+# -------------------------------------------------
+# FLEXIBLE FULL-NAME VARIANT REPLACEMENT (SAFE)
+# -------------------------------------------------
+def replace_fullname_variants(text, master_pii, page_key, replace_combine):
+    # iterate over a COPY to avoid mutation error
+    pages_snapshot = list(master_pii.values())
+
+    for page in pages_snapshot:
+        entries_snapshot = list(page.values())
+
+        for entry in entries_snapshot:
+            original = entry["original"]
+            dummy = entry["dummy"]
+
+            tokens = tokenize(original)
+            if len(tokens) != 2:
+                continue  # only First + Last
+
+            first, last = list(tokens)
+
+            pattern = re.compile(
+                rf"\b{re.escape(first)}\s*,?\s*{re.escape(last)}\b",
+                flags=re.IGNORECASE
+            )
+
+            def _repl(match):
+                key = f"fullname_variant_{first}_{last}"
+
+                # ✅ safe write (no iteration happening now)
+                master_pii[page_key][key] = {
+                    "original": match.group(0),
+                    "dummy": dummy
+                }
+
+                if key not in replace_combine:
+                    replace_combine[key] = {
+                        "original": match.group(0),
+                        "dummy": dummy
+                    }
+
+                return dummy
+
+            text = pattern.sub(_repl, text)
+
+    return text
+
 def get_output_paths(pdf_path):
     pdf_dir = os.path.dirname(pdf_path)
     pdf_name = os.path.splitext(os.path.basename(pdf_path))[0]
@@ -242,6 +288,62 @@ def get_output_paths(pdf_path):
             out_dir, f"{safe_name}_master_pii.json"
         ),
     }
+
+# -------------------------------------------------
+# GLOBAL FUZZY PII MATCH (DOCUMENT TEXT → combined_pii)
+# -------------------------------------------------
+def fuzzy_global_pii_match_and_add(
+    text,
+    combined_pii,
+    dummy_pool,
+    master_pii,
+    page_key,
+    replace_combine,
+    threshold=50
+):
+    master_pii.setdefault(page_key, {})
+
+    normalized_doc = normalize_text(text)
+
+    used_dummies = {
+        v["dummy"]
+        for p in master_pii.values()
+        for v in p.values()
+    }
+
+    for field, value in combined_pii.items():
+        originals = value if isinstance(value, list) else [value]
+
+        for original in originals:
+            norm_original = normalize_text(original)
+            if not norm_original:
+                continue
+
+            score = fuzz.partial_ratio(norm_original, normalized_doc)
+
+            if score >= threshold:
+                # prevent duplicate original insertion
+                if any(
+                    normalize_text(v["original"]) == norm_original
+                    for p in master_pii.values()
+                    for v in p.values()
+                ):
+                    continue
+
+                dummy = pick_dummy(field, dummy_pool, used_dummies)
+                used_dummies.add(dummy)
+
+                key = f"{field}_fuzzy_{len(master_pii[page_key])}"
+
+                entry = {
+                    "original": original,
+                    "dummy": dummy
+                }
+
+                master_pii[page_key][key] = entry
+                replace_combine.setdefault(key, entry)
+
+    return text
 
 
 # -------------------------------------------------
@@ -268,7 +370,25 @@ def process_pdf(pdf_path, output_dir, dummy_file, combined_pii_file):
         page_no = i + 1
         print_progress_bar(page_no, total_pages)
 
+        # text = extract_text_from_page(pdf_path, i)
+
+        page_key = f"page_{page_no}"
+        master_pii.setdefault(page_key, {})
+
+        # ✅ FIRST extract OCR text
         text = extract_text_from_page(pdf_path, i)
+
+        # ✅ THEN apply fuzzy global match
+        text = fuzzy_global_pii_match_and_add(
+            text,
+            combined_pii,
+            dummy_pool,
+            master_pii,
+            page_key,
+            replace_combine
+        )
+
+
 
         replace_page = build_replace_page(
             page_no,
@@ -278,7 +398,14 @@ def process_pdf(pdf_path, output_dir, dummy_file, combined_pii_file):
         )
 
         sanitized = replace_from_map(text, replace_page)
-        sanitized = replace_name_variants(
+        # sanitized = replace_name_variants(
+        #     sanitized,
+        #     master_pii,
+        #     page_key=f"page_{page_no}",
+        #     replace_combine=replace_combine
+        # )
+
+        sanitized = replace_fullname_variants(
             sanitized,
             master_pii,
             page_key=f"page_{page_no}",
@@ -326,8 +453,8 @@ def process_pdf(pdf_path, output_dir, dummy_file, combined_pii_file):
 # -------------------------------------------------
 if __name__ == "__main__":
     process_pdf(
-        pdf_path=r"D:\\py-tesseract\\BF - James Freer\\Arranged Medical Records and Bills\\Medical Provider Records\\2023.11.16 Senta Neurosurgery.pdf",
-        # pdf_path=r"D:\\py-tesseract\\BF - James Freer\\Arranged Medical Records and Bills\\Medical Provider Records\\MR.pdf",
+        # pdf_path=r"D:\\py-tesseract\\BF - James Freer\\Arranged Medical Records and Bills\\Medical Provider Records\\2023.11.16 Senta Neurosurgery.pdf",
+        pdf_path=r"D:\\py-tesseract\\BF - James Freer\\Arranged Medical Records and Bills\\Medical Provider Records\\2025.01.10 AMR - Mark up and comment done.pdf",
         # pdf_path=r"D:\\py-tesseract\\BF - James Freer\\Arranged Medical Records and Bills\\Medical Provider Records\\2024.06.30 Big Bear Fire Department.pdf",
         output_dir="output",
         dummy_file="dummy.json",

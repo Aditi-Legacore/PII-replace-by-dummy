@@ -1,0 +1,47 @@
+{
+    "Patient Name::begle ,peter": {
+        "field": "Patient Name",
+        "original": "Begle ,Peter",
+        "dummy": "Alex Brown"
+    },
+    "Name::begle, peter": {
+        "field": "Name",
+        "original": "Begle, Peter",
+        "dummy": "[REDACTED-Name]"
+    },
+    "MRN::7605906": {
+        "field": "MRN",
+        "original": "7605906",
+        "dummy": "000000MRN"
+    },
+    "DOB::03/19/1937": {
+        "field": "DOB",
+        "original": "03/19/1937",
+        "dummy": "01-01-1900"
+    },
+    "Address::1146 navajo d fawnskin, ca92333": {
+        "field": "Address",
+        "original": "1146 navajo D Fawnskin, CA92333",
+        "dummy": "123 Dummy Street, Dummy City"
+    },
+    "SSN::999-99-9999": {
+        "field": "SSN",
+        "original": "999-99-9999",
+        "dummy": "000-01-0002"
+    },
+    "Patient's Phone Number::(909) 800-5237": {
+        "field": "Patient's Phone Number",
+        "original": "(909) 800-5237",
+        "dummy": "9000000001"
+    },
+    "Patient Care Report Number::005b7d74689145b8a6e9b6f7a7ef7678": {
+        "field": "Patient Care Report Number",
+        "original": "005b7d74689145b8a6e9b6f7a7ef7678",
+        "dummy": "00000000000000000000000000000000"
+    },
+    "Incident::24-159096": {
+        "field": "Incident",
+        "original": "24-159096",
+        "dummy": "24-159096"
+    }
+}

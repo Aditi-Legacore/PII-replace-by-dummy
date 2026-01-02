@@ -1,0 +1,1016 @@
+
+============================================================
+PAGE 1
+============================================================
+
+09/04/2024 6:49:17
+AM
+—-0600
+FAXCOM
+Patient Name:
+Begle ,Peter
+Complete ePCR w/attachments
+PAGE 6
+OF
+EMS Agency Name:
+Big Bear Fire Department
+41080 Big Bear Blvd,
+Big Bear Lake, CA 92315
+LiouUae
+Name:
+Begle, Peter
+Age:
+Address:
+1146 navajo
+Gender:
+D
+Fawnskin, CA 92333
+Weight:
+Fi
+Alternate Home
+Is Patient
+No
+Residence:
+Hometess?:
+SSN#:
+Patient's Phone Number
+(909) 800-5237
+Patient Notes:
+87 Years
+D.O.B:
+03/19/1937
+Male
+Race:
+White
+7.3 kgEstimate
+999-99-9999
+Type
+Mobile
+erro esc
+ee
+cn
+Call Type:
+Resp.Mode:
+Response:
+Response Delay:
+Location:
+Incident Address:
+Unit Disposition:
+Reason for
+Refusal/Release:
+Traffic/Transportation incident
+Emergent (Immediate Response}
+Emergency Response (Primary Response Area}
+None/No Delay
+Street and Highway
+O EB HWY 38 MM 54
+Fawnskin, CA 92314
+Patient Contact
+Patient
+Patient Evaluated
+Made
+Evaluation/Care:
+and Care Provided
+Level ofCare
+ALS - Paramedic
+Provided per
+Protocol:
+Primary Role of the
+Unit:
+Transporting
+Agency:
+Transport Mode:
+Destination:
+Air Ambulance
+provider care
+transferred to:
+Dest. Determ.:
+Crew Disposition:
+Transport Delay:
+ALS Ground Transport
+Big Bear Fire Authority (36042)
+Non-Emergent,
+Bear Valley Community Heaithcare District
+41870 Garstin Dr.
+P.O. Box 1649
+Big Bear Lake, CA 92315
+LZ Location - Other:
+On-Line/On-Scene Medical Direction
+Initiated and
+Transport
+Transport by This EMS
+Continued Primary
+Disposition:
+Unit (This Crew Only)
+Care
+None/No Delay
+GOS
+a eaocc
+PSAP:
+Disp. Notified:
+Unit Disp:
+Enroute:
+At Scene:
+At Patient:
+Depart:
+Arrive Dest
+Destination PT
+Transfer of Care:
+In Service:
+Receiving Hospital
+Contacted
+Date/Time:
+Base Hospital
+Contacted:
+06/30/2024 16:50:29
+06/30/2024 16:50:29
+06/30/2024 16:58:25
+06/30/2024 16:58:25
+06/30/2024 17:05:59
+06/30/2024 17:07:05
+06/30/2024 17:22:40
+06/30/2024 17:33:42
+06/30/2024 17:39:04
+06/30/2024 17:44:55
+Lome Linda University
+Medical Center
+Contact Date:
+Base Hospital
+06/30/2024 17:18:52
+incident Number:
+Call Sign:
+Veh. #:
+Scene Odom:
+Dest. Odom:
+EMS Transport
+Method:
+24-159096
+MA282A
+MA282A
+To Dest:
+3.7
+we
+ny
+Ground-Ambulance
+ss
+Crew Member
+Level of Certification
+Role
+Ward, Zachary
+Diaz, Cesar
+EMT-Basic
+Paramedic
+Driver/Pilot-Response
+;
+Driver/Pilot-Transport
+Primary Patient Caregiver-At Scene ; Primary Patient Caregiver-Transport
+Other Agencies On Scone
+Other EMS or Public Safety Agencies at Scene
+Unit Notified:
+Incident #:
+24-159096
+OtherAgencies On Scene
+06/30/2024 16:58:25
+Other EMS or Public Safety Agency ID Number
+Patient Name:
+Begle Peter
+Patient Care Report Number:
+005b7d74689145b8a6e9b6f7a7ef7678
+Type of Other Service at Scene
+Call #:
+24-159096
+Date Printed:
+68/27/2024
+13:48
+Page
+1 of 5
+
+[OCR]
+09/04/2024 6:49:17 AM -—O600 FAXCOM PAGE 6 OF 10
+Patient Name: Begle ,Peter EMS Agency Name: Big Bear Fire Department
+K6iRpe, mere tence 281
+eer 41090 Big Bear Blvd.
+wre Big Bear Lake, CA 92315
+Complete ePCR w/attachments
+Patient information
+Name: Begle, Peter Age: 87 Years D.O.B: 03/19/1937
+Address: 1146 navajo Gender: Male Race: White
+D
+Fawnskin, CA 92333
+Weight: 7.3 kgEstimate
+‘ Alternate Home
+Is Patient No Residence:
+Hometess?:
+SSN#: 999-99-9999
+Patient's Phone Number Type
+(909) 800-5237 Mobile
+Patient Notes:
+Call Type/Location/Dispocition
+Call Type: Traffic/Transportation incident
+Resp. Mode: Emergent (Immediate Response) Primary Rote of the ALS Ground Transport
+Unit:
+Transporting Big Bear Fire Authority (36042)
+Agency:
+Response: Emergency Response (Primary Response Area) Transport Mode: Non-Emergent
+Response Delay: None/No Delay Destination: Bear Valley Community Healthcare District
+41870 Garstin Dr.
+P.O. Box 1649
+Big Bear Lake, CA 92315
+fone ri Air Ambulance LZ Location - Other:
+Location: Street and Highway provider care
+transferred to:
+Dest. Determ.: On-Line/On-Scene Medical Direction
+Incident Address: 0 EB HWY 38 MM 54
+Fawnskin, CA 92314
+Unit Disposition: Patient Contact Patient Patient Evaluated Crew Disposition: Initiated and Transport Transport by This EMS.
+Made Evaluation/Care: and Care Provided Continued Primary Disposition: Unit (This Crew Only)
+Care
+Re fe
+Refusal/Release: Level of Care ALS - Paramedic Transport Delay: None/No Delay
+Provided per
+Protocol:
+Recnonse Vines and Mileage
+PSAP: 06/30/2024 16:50:29 incident Number: 24-159096
+Disp. Notified: 06/30/2024 16:50:29 Call Sign: MA282A To Dest: 3.7
+Unit Disp.: 06/30/2024 16:58:25 Veh. #: MA282A
+Enroute: 06/30/2024 16:58:25
+AtScene: 06/30/2024 17:05:59 Scene Odom: 0
+At Patient: 06/30/2024 17:07:05 Dest.Odom: 3.7
+Depart: 06/30/2024 17:22:40
+Arriva Dest. 06/30/2024 17:33:42
+Destination PT 06/30/2024 17:39:04 EMS Transport Ground-Ambulance
+Transfer of Care: Method:
+In Service: 06/30/2024 17:44:55,
+Receiving Hospital
+Contacted
+Date/Time:
+Base Hospital Loma Linda University Base Hospital 06/30/2024 17:18:52
+Contacted: Medical Center Contact Date:
+Unit Personnel
+Crew Member Level of Certification Role
+Ward, Zachary EMT-Basic Driver/Pilot-Response ; Driver/Pilot-Transport
+Diaz, Cesar Paramedic Primary Patient Caregiver-At Scene ; Primary Patient Caregiver-Transport
+Other Bgencies On Scone
+Other Agencies On Scene
+Other EMS or Public Safety Agencies at Scene Other EMS or Public Safety Agency ID Number Type of Other Service at Scene
+Unit Notified: 06/30/2624 16:58:25 Patient Name: Begle ,Peter Call #: 24-159096
+Incident #: 24-159096 Patient Care Report Number: 005b7d74689145b8a6e9b6F7a7ef7678 Date Printed: 08/27/2024 13:48
+Page 1 of 5
+
+============================================================
+PAGE 2
+============================================================
+
+09/04/2024 6:49:17
+AM
+—0600
+FAXCOM
+Patient Name:
+Begle
+Peter
+San Bernardino County Fire Department
+$62-50824
+PAGE
+7
+OF
+EMS Agency Name:
+Big Bear
+Fire Department
+Fire
+Primary impression: Traumatic injury
+eas
+ie
+Secondary
+impression:
+Traumatic injury
+Complaint Type
+Chief (Primary)
+Date/Time of
+06/30/2024 16:57:05
+Symptom Onset:
+Primary Symptom:
+Pain, Extremity
+Alcohol/Drug Use:
+Chief Complaint
+‘Organ System:
+None Reported
+Musculoskeletal/Skin
+Mechanism of Injury:
+Blunt
+Cause of injury:
+Motor Vehicle Colfisian/Crash - Traffic
+Patient Condition
+Complaint
+Right hip pain
+Possible Injury:
+Other Symptoms:
+Barriers to Patient
+Care:
+Chief Complaint
+Anatomic Location:
+initial Patient
+Acuity:
+Final Patient Acuity:
+Duration
+40 Minutes
+Yes
+Pain, Extremity
+None Noted
+Extremity-Lower
+Lower Acuity (Green)
+Lower Acuity
+(Green)
+sess
+Narrative:
+Big bear medic ambulance 282A responded to a motor vehicle accident on highway 38with medic engine $6 on scene prior to our arrival. Initial patient care and
+assessment performed by medic engine 96. Patient states hewas traveling approximately 35 miles per hour, when the vehicle in front of him went to make a left
+turn. The patient also states that he was unable to avoid the vehicle and collided. The patient's vehicle came into contact with the other vehicle on the front
+driver side. Patient's vehicle had moderate damage to the front end with airbag deployment. Patient has full recall of the event. No blood thinning medications
+reported, Patient isalert and oriented times four with a GCS of 15. Breathing full and effective with clear lung sounds bilaterally. Moves all extremities
+appropriately with PMSC intact throughout. Patient has 6/10 pain to theright hip pain patpitation or movement. Nocrepitus or deformity noted upon palpation.
+Patient has a skin tear to the right hand with bleeding controlled with Kerlex bandage. No other outward signs of trauma noted
+insecondary assessment.
+Patient denies any head, neck, or back pain. Patient aise denies any headache, nausea, shortness of breath, or chest pain. Loma Linda base was contacted on
+scene due to the patients age and mechanism. Loma Linda base instructed us to go te Bearvalley community hospital. Patient was a carried to gurney and loaded
+into the ambulance. Transported code 2 to BVCH with nochange in status. Patient care was transferred to registered nurse upon arrival,
+Past Medical Histo!
+Medication
+None Reported
+‘Other medications
+not listed:
+Medication Allergies
+Patient Medications
+Medication Allergies
+No Known Drug Alleray
+Medical History:
+EENT - Glaucoma; Hypertension
+Medical History
+Patient
+Obtained From:
+Date/Time of
+17:09:05
+17:24:05
+06/30/2024 17:09:05
+Detailed Findings
+Location
+Description
+Details
+Mental Status
+Oriented-Event
+Oriented-Person
+Oriented-Place
+Oriented-Time
+Eye
+Bilateral:
+3-mm
+PERRL
+Back/Spine
+Lung
+Bilateral:
+Breath Sounds-Equal
+Breath Sounds-Normal
+Unit Notified:
+06/30/2024 16:58:25
+Incident#: 24-159096
+Patient Name:
+Begle ,Peter
+Patient Care Report Number:
+005b7d74689145b8a6e9b6f7a7ef7678
+Call #:
+24-159096
+Date Printed:
+68/27/2024
+13:48
+Page 2 of 5
+
+[OCR]
+09/04/2024 6:49:17 AM -—O600 FAXCOM PAGE 7 OF 10
+Patient Name: Begle Peter EMS Agency Name: Big Bear Fire Department
+San Bernardino County Fire Department $62-50824 Fire
+Primary Impression: Traumatic injury Secondary Traumatic injury
+impression:
+Patient Condition
+Complaint Type Complaint Duration
+Chief (Primary) Right hip pain 40 Minutes
+Date/Time of 06/30/2024 16:57:05
+Symptom Onset:
+Primary Symptom: Pain, Extremity Possible Injury: Yes
+Alcohol/Drug Use: None Reported Other Symptoms: Pain, Extremity
+Chief Complaint Musculoskeletal/Skin Barriers to Patient None Noted
+Organ System: Care:
+Chief Complaint Extrermity-Lower
+Anatomic Location:
+Mechanism of Injury: Blunt initial Patient Lower Acuity (Green)
+Acuity:
+Cause of injury: Motor Vehicle Collision/Crash - Traffic Final Patient Acuity: Lower Acuity (Green)
+
+Narrative: Big bear medic ambulance 282A responded to a motor vehicle accident on highway 38 with medic engine 96 on scene prior to our arrival. Initial patient care and
+assessment performed by medic engine 96. Patient states he was traveling approximately 35 miles per hour, when the vehicle in front of him went to make a left
+turn. The patient also states that he was unable to avoid the vehicle and collided. The patient's vehicle came into contact with the other vehicle on the front
+driver side. Patient's vehicle had moderate damage to the front end with airbag deployment. Patient has full recall of the event. No blood thinning medications
+reported, Patient is alert and oriented times four with a GCS of 15. Breathing full and effective with clear lung sounds bilaterally. Moves all extremities
+appropriately with PMSC intact throughout. Patient has 6/10 pain to the right hip pain patpitation or movement. No crepitus or deformity noted upon palpation.
+Patient has a skin tear to the right hand with bleeding controlled with Kerlex bandage. No other outward signs of trauma noted in secondary assessment.
+Patient denies any head, neck, or back pain. Patient aiso denies any headache, nausea, shortness of breath, or chest pain. Loma Linda base was contacted on
+scene due to the patients age and mechanism. Loma Linda base instructed us to go to Bear valley community hospital. Patient was a carried to gurney and loaded
+into the ambulance. Transported code 2 ta BVCH with no change in status. Patient care was transferred to registered nurse upon arrival,
+
+Past Medical Histo!
+Patient Medications
+Medication
+None Reported
+‘Other medications
+not listed:
+Medication Allergies
+Medication Altergies
+No Known Drug Allergy
+Medical History: EENT - Glaucoma; Hypertension
+Medical History Patient
+Obtained Fram:
+Date/Time of Assessment
+17:08:05
+TP24.05
+06/30/2024 17:09:05
+Detailed Findings
+Location Description Details
+Mental Status Oriented-Event
+Oriented-Person
+Oriented-Place
+Oriented-Time
+Eye
+Bilateral: 3-mm
+PERRL
+Back/Spine
+Lung
+Bilateral: Breath Sounds-Equal
+Breath Sounds-Normal
+Unit Notified: 06/30/2624 16:58:25 Patient Name: Begle ,Peter Call #: 24-159096
+Incident #: 24-159096 Patient Care Report Number: 005b7d74689145b8a6e9b6F7a7ef7678 Date Printed: 08/27/2024 13:48
+Page 2 of 5
+
+============================================================
+PAGE 3
+============================================================
+
+09/04/2024 6:49:17
+AM
+—0600
+FAXCOM
+Patient Name:
+Segle Peter
+Normal Findings
+PAGE
+&
+OF
+10
+EMS Agency Name:
+Big Bear
+Fire Department
+Skin;
+Head;
+Neck;
+Back/Spine ( Back-General);
+Not Done
+(onealcdeuli
+06/30/2024 17:24:05
+Detailed Findings
+Location
+Description
+Details
+MentalStatus
+Oriented-Event
+Oriented-Person
+Oriented-Place
+Oriented-Time
+Eye
+Bilateral:
+3-mim
+PERRL
+Back/Spine
+Lung
+Bilaterat:
+Breath Sounds-Equal
+Breath Sounds-Normal
+Normal Findings
+Skin;
+Head;
+Neck;
+Back/Spine {Back-General };
+Not Done
+Uae
+Procedures
+Procedure Performed Prior to this Units
+Size of
+Procedure
+EMS Care
+Time
+Crew
+Name
+Location
+Equipment
+Attempts
+Response
+Success
+Comments
+No.
+17:08:05
+Diaz,
+Venous Access -Extremity
+Forearm-
+18
+1
+Yes
+Cesar
+Catheterization
+Left
+Vitals
+Response
+tethod oF
+Blood Pressure
+Patient
+ira Pulse
+Method Heat
+Pulse
+Pulse
+Cardiac Rhythm /Electrocardiography MethodoFECG
+Resp Resp
+Fine
+PTA
+(AVPU}
+BP
+Measurement
+ByPressure _ Pasition
+Rate
+Quality
+Raythm
+(ECG)
+i
+Rate
+Reg
+Effort S902 Qual
+COZ
+170895No
+Alert
+is0/
+Coffautomated
+cate
+Sitting
+a
+Regular
+Sinus Riythen
+Manual interpretation
+18
+Normas4
+AERO
+31
+Automated
+i
+ic
+17249580
+Alert
+162]
+CuffAutomated
+ctf
+sitting
+o
+Regular
+Sinus Rhythm
+Manual interpretation
+18
+Norma3sAtRoom
+93
+Aatomated
+‘
+Rie
+Vitals
+Date/Time
+Mean Arterial Pressure
+Te
+Methed
+Pain Scale Score
+Pain Scale Type
+Blood Glucose Level
+47:09:05
+114
+6
+Numeric (0-10)
+17:24:05
+116
+6
+Numeric (0-10)
+POQRST
+Date/Time Vital Signs Taken
+Provoked
+Quality
+Region
+Pain Scale Score
+Duration
+Duration Units
+POQRST Narrative
+17:09:05
+Paipation
+Dull
+Leg
+6
+10
+Minutes
+47:24:05
+Paipation
+Bull
+Leg
+6
+10
+Minutes
+ECG
+Date/Time Vital Signs Taken
+Cardiac Rhythm / Electrocardiography (ECG)
+ECG Type
+Method of ECG interpretation
+17:09:05
+Sinus Rhythm
+4tead
+Manual interpretation
+17:24:05
+Sinus Rhythm
+4Lead
+Manual interpretation
+Unit Notified:
+06/30/2024 16:58:25
+Incident#: 24-159096
+ces
+Patient Name:
+Begle ,Peter
+Patient Care Report Number:
+005b7d74689145b8a6e9b6f7a7ef7678
+Call #:
+24-159096
+Date Printed:
+68/27/2024
+13:48
+Page 3 of 5
+
+[OCR]
+09/04/2024 6:49:17 AM -—O600 FAXCOM PAGE 8 OF 10
+Patient Name: Begle ,Peter EMS Agency Name: Big Bear Fire Department
+Normal Findings
+Skin; Head; Neck; Sack/Spine ( Back-General ) ;
+Nat Done
+06/30/2024 17:24:05
+Detailed Findings
+Location Description Details
+Mental Status Oriented-Event
+Oriented-Person
+Oriented-Place
+Oriented-Time
+Eye
+Bilaterat: 3-mm
+PERRL
+Back/Spine
+Lung
+Bilateral: Breath Sounds-Equal
+Breath Sounds-Normal
+Normal Findings
+Skin; Head; Neck; Back/Spine ( Back-General } ;
+Not Done
+Procedures
+Procedure Performed Prior to this Units Size of Procedure
+EMS Care Time Crew Name Location Equipment Attempts Response Success Comments
+No. 17:09:05 Diaz, Venous Access - Extremity Forearm- 18 1 Yes
+Cesar Catheterization Left
+Vitals
+Vitals
+Response Method oF Blood Pressure Patient —Airwa Pulse Method Heart Pulse Pulse —=——Catdiat Rhythm //Electrocardlography Methed of ECG Resp Resp
+ime PTA, (AVPU} BP Measurement B/Pressura Position y Rate Rate Quality Rhythm (ECG) interpretation Rate Reg Effort SpOZ Qual COZ
+T7OS05No Alert 1607 CuFf-Automated cuff. Sitting @ Regular Sinus Rhythm ‘Manual interpretation 18 Normag4 AERoom
+1 Automated y air
+172495 No Aiert 162) Cuff-Automated cuff sitting o Regular Sinus Rhythm Manual interpretation 18 Normass At Room
+93 Automated ‘ aie
+Vitals
+Date/Time Mean Arterial Pressure Temperature Temperature Method Pain Seale Score Pain Scale Type Blood Glucose Level
+17:09:05 114 6 Numeric (0-10)
+17:24:05 116 6 Numeric (0-10)
+PORST
+Date/Time Vital Signs Taken Provoked Quality Region Pain Scale Score Duration Duration Units PORST Narrative
+17:09:05, Paipation Dull Leg 6 10 Minutes.
+17:24:05 Palpation Dull Leg 6 10 Minutes
+ECG
+Date/Time Vital Signs Taken Cardiac Rhythm / Electrocardiography (ECG) ECG Type Method of ECG interpretation
+47:09:05 Sinus Rhythm 4tead Manual Interpretation
+17:24:05 Sinus Rhythm 4Lead Manual interpretation
+acs
+Unit Notified: 06/30/2624 16:58:25 Patient Name: Begle ,Peter Call #: 24-159096
+Incident #: 24-159096 Patient Care Report Number: 005b7d74689145b8a6e9b6F7a7ef7678 Date Printed: 08/27/2024 13:48
+Page 3 of 5
+
+============================================================
+PAGE 4
+============================================================
+
+09/04/2024 6:49:17
+AM
+—0600
+FAXCOM
+PAGE 3
+OF
+10
+Patient Name:
+Begle ,Peter
+EMS Agency Name:
+Big Bear
+Fire Department
+Total
+Glasgow
+Time
+ComaScore
+fye
+Motor
+Verbal
+Score Qualifier
+17:09:05
+15
+4- Opens Eyes
+6- Obeys commands (>2Years};
+5 - Oriented (>2 Years); Smiles, oriented _ initial GCS has legitimate values without
+spontanecusly (AlAge |
+Appropriate response to
+to sounds, Foliows objects, interacts
+interventions such as intubation and sedation
+Groups}
+stimulation
+47:24:05
+18
+4- Opens Eyes
+6 - Obeys commands {>2Years);
+§- Oriented (>2 Years); Smiles, oriented
+initial GCS has legitimate values without
+spontaneously (AllAge
+|
+Appropriate response to
+to sounds, Follows objects, interacts
+interventions such as intubation and sedation
+Groups}
+stimulation
+Suan
+Cardiac Arrest:
+No
+Therapeutic
+No
+Hypothermia
+Initiated:
+OtherAgencies On Scene
+OtherAgencies On Scene
+OtherAgencies On Scene
+Croatoa:
+Base Hospital
+06/30/2024 17:18:52
+Contact Date:
+Base Hospital
+Loma Linda University Medical Center
+Contacted:
+UOTE
+Cause of injury:
+Motor Vehicle Colfisian/Crash - Traffic
+Mechanism of Injury:
+Blunt
+Trauma Center
+Not Applicable
+Criteria:
+Vehicular, NotApplicable
+Pedestrian, or Other
+Injury Risk Factor:
+Location of Patient
+Front Seat-Left Side (or motorcycle driver)
+in Vehicle:
+UseofOccupant
+Shoulder and Lap Belt Used
+Safety Equipment:
+Main Area of the 1
+Vehicle impacted by
+theCollision:
+Airbag Deployment:
+Airbag Deployed Front
+Work-Related
+No
+ilness/injury:
+DUS
+Payment:
+insurance
+WorkRelated?: No
+ET3 Alternative
+Alternative Disposition Not Offered
+Disposition Offer
+and Result:
+Reason for
+tere
+Transfer/Medical
+Transport:
+Sass
+Type of Person Signing: Patient
+3:HIPAA acknowl
+{Release;
+ission
+to Transport; Permission to Treat; Release for Billing
+Paragraph Text:
+Our Notice of Privacy Practices provides information about how we may use and disclose protected heaith information about you. You have the right to review ournotice before signing
+this consent. As provided in our notice, theterms ofour notice may change. Ifwechange our notice, you may obtain a revised copy. You have the right to request that werestrict how
+protected health information about yau is used or disclosed for treatment, payment or health care operations. We are notrequired to agree to this restriction, butif wedo, weare
+bound by ouragreement. Bysigning this form, you consent to our use and disclosure of protected health information about you for treatment, payment or health care operations. You
+have the right to revoke this consent, inwriting, except where we have already made disclosures in reliance on your prior consent.
+tauthorize the release to the Social Security Administration and Centers for Medicare and Medicaid Services, any HMO/PPO, other private or public insurance, or their agents, Fiscal
+intermediaries or carriers or anindependent agency performing billing or collection functions on behalf of the ambulance service, any personal, medical
+or billing information needed for
+this or a related claim. |understand {will be responsible for any services that are notpaid/covered by my insurance. A copy of this authorization shall be valid as the original and shall
+remain in effect until revoked in writing by thepatient/insured. |request payment ofmedical insurance benefits either to me or to theambulance service.
+Unit Notified:
+06/30/2024 16:58:25
+Patient Name:
+Begie Peter
+Call #:
+24-159096
+Incident #:
+24-159096
+Patient Care Report Number:
+005b7d74689145b8a6e9b6f7a7ef7678
+Date Printed:
+68/27/2024
+13:48
+Page 4 of 5
+
+[OCR]
+09/04/2024 6:49:17 AM -—O600 FAXCOM PAGE 9 OF 10
+Patient Name: Begle ,Peter EMS Agency Name: Big Bear Fire Department
+Total
+Glasgow
+Time ComaScore Eye Motor Verbal Score Qualifier
+17:09:05 15 4- Opens Eyes 6~ Obeys commands (>2Years); 5- Oriented (>2 Years); Smiles, oriented initial GCS has legitimate values without
+spontaneously (AillAge Appropriate response to to sounds, follows objects, interacts interventions such as intubation and sedation
+Groups) stimulation
+17:24:05 18 4+ Opens Eyes 6 - Obeys commands {>2Years); 5+ Oriented (>2 Years); Smiles, oriented initial GCS has legitimate values without
+spontaneously (AllAge | Appropriate response to to sounds, follows objects, interacts interventions such as intubation and sedation
+Groups} stimulation
+Cardiac Arrest
+Cardiac Arrest: No
+Therapeutic No
+Hypothermia
+Initiated:
+Other Agencies On Scene
+Other Agencies On Scene
+Other Agencies Gn Scene
+Base Hospital
+Base Hospital 06/30/2024 17:18:52
+Contact Date:
+Base Hospital Loma Linda University Medical Center
+Contacted:
+Trauma Detail
+Cause of injury: Motor Vehicle Collision/Crash - Traffic
+Mechanism of Injury: Blunt
+Trauma Center Not Applicable
+Criteria:
+Vehicular, Not Applicable
+Pedestrian, or Other
+injury Risk Factor:
+Location of Patient Front Seat-Left Side (or motorcycle driver)
+in Vehicle:
+Use of Occupant Shoulder and Lap Belt Used
+Safety Equipment:
+Main Area of the 1
+Vehicle impacted by
+the Collision:
+Airbag Deployment: Airbag Deployed Front
+Work-Related No
+iilness/injury:
+Billing Information
+Payment: insurance Work Related?: No
+ET3 Alternative Alternative Disposition Not Offered
+Disposition Offer
+and Result:
+Reason for
+interfacility
+Transfer/Medical
+Transport:
+Signatures
+Type of Person Signing: Patient
+Signature Reason: HIPAA acknawledgement/Release; Permission to Transport; Permission to Treat: Release for Billing
+Paragraph Text:
+‘Our Notice of Privacy Practices provides information about how we may use and disclose protected heaith information about you. You have the right to review our notice before signing
+this consent. As provided in our notice, the terms of our notice may change. If we change our notice, you may obtain a revised copy. You have the right to request that we restrict how
+protected health information about yau is used or disclosed for treatment, payment or health care operations. We are not required to agree to this restriction, but if we do, we are
+bound by our agreement. By signing this form, you consent to our use and disclosure of protected health information about you for treatment, payment or health care operations. You
+have the right to revoke this consent, in writing, except where we have already made disclosures in reliance on your prior consent.
+t authorize the release to the Social Security Administration and Centers for Medicare and Medicaid Services, any HMO/PPO, other private or public insurance, or their agents, fiscal
+intermediaries or carriers or an independent agency performing billing or collection Functions on behalf of the ambulance service, any personal, medical or billing information needed for
+this or a related claim. | understand { will be responsible for any services that are not paid/covered by my insurance. A copy of this authorization shall be valid as the original and shall
+remain in effect until revoked in writing by the patient/insured. ! request payment of medical insurance benefits either to me or to the ambulance service.
+Unit Notified: 06/30/2624 16:58:25 Patient Name: Begle ,Peter Call #: 24-159096
+Incident #: 24-159096 Patient Care Report Number: 005b7d74689145b8a6e9b6F7a7ef7678 Date Printed: 08/27/2024 13:48
+Page 4 of 5
+
+============================================================
+PAGE 5
+============================================================
+
+Patient Name:
+Segle Peter
+access fees from your cellular provider.
+Status: Not Signed - Patient Contamination
+Signature Graphic:
+09/04/2024 6:49:17
+AM
+—0600
+FAXCOM
+PAGE
+10
+OF
+10
+EMS Agency Name:
+Big Bear
+Fire Department
+By providing us with
+a telephone number for a cellular phone or other wireless device, you are expressly consenting to receiving communications
+~including but not limited to
+prerecorded or artificial voice message calls, text messages, and calls made byan automatic telephone dialing system —from us and our affiliates and agents at that number. This
+express consent applies to each such telephone number that you provide to us new or inthe Future and permits such calls regardless of their purpose. Calls and messages may incur
+Printed Name: Peter
+Begle
+Date/Time Signature Locked: 06/30/2024 17:29:27
+Signature Date:
+Type of Person Signing: EMS Primary Care Provider (for this event}
+Signature Reason: EMS Provider
+Paragraph Text:
+Status: Signed
+Signature Graphic:
+Printed Name: Cesar
+Diaz
+Date/Time Signature Locked:
+Signature Date:
+Type of Person Signing: Healthcare Provider
+Signature Reason: Transfer of Patient Care
+Paragraph Text:
+Status: Signed
+Signature Graphic:
+Printed Name: Lisa
+RN
+Date/Time Signature Locked: 06/30/2024 17:39:02
+Signature Date:
+ad
+Number of Patients
+Single
+at Scene:
+REDS
+Patient Belongings:
+Cell Phone
+Patient Belongings
+At Destination with Patient
+Left with:
+Unit Notified:
+06/30/2024 16:58:25
+Incident #:
+24-159096
+Patient Care Report Number:
+005b7d74689145b8a6e9bafTa7ef7678
+Patient Name:
+Begte Peter
+Call#
+24-159096
+Date Printed:
+08/27/2024
+13:48
+Page 5 of 5
+
+[OCR]
+09/04/2024 6:49:17 AM -—O600 FAXCOM PAGE 10 OF 10
+Patient Name: Begle ,Peter EMS Agency Name: Big Bear Fire Department
+By providing us with a telephone number for a cellular phone or other wireless device, you are expressly consenting to receiving communications ~ including but not limited to
+prerecorded or artificial voice message calls, text messages, and calls made by an automatic telephone dialing system ~ from us and our affiliates and agents at that number. This
+express consent applies to each such telephone number that you provide to us now or in the Future and permits such calls regardless of their purpose. Calls and messages may incur
+access fees from your cellular provider.
+Status: Not Signed - Patient Contamination
+Signature Graphic:
+Printed Name: Peter Begle
+Date/Time Signature Locked: 06/30/2024 17:29:27
+Signature Date:
+‘Type of Person Signing: EMS Primary Care Provider (for this event)
+Signature Reason: EMS Provider
+Paragraph Text:
+Status: Signed
+Signature Graphic:
+Printed Name: Cesar Diaz
+Date/Time Signature Locked:
+Signature Date:
+Type of Person Signing: Healthcare Provider
+Signature Reason: Transfer of Patient Care
+Paragraph Text:
+Status: Signed
+Signature Graphic:
+Printed Name: Lisa RN
+Date/Time Signature Locked: 06/30/2024 17:39:02
+Signature Date:
+Number of Patients Single
+at Scene:
+Valuables
+Patient Belongings: Cell Phone
+Patient Belongings At Destination with Patient
+Left With:
+Unit Notified: 06/30/2024 16:58:25 Patient Name: Begle , Peter Calli 24-159096
+Incident #: 24-159096 Patient Care Report Number: 00567d74689145bBa6e9b6f7a7ef7678 Date Printed: 08/27/2024 13:48
+Page § of 5

@@ -1,40 +1,47 @@
 {
-    "page_1": {
-        "Patient Name": {
-            "original": "Handrop, Ronald S",
-            "dummy": "Alex Brown"
-        },
-        "MRN": {
-            "original": "20211",
-            "dummy": "000000MRN"
-        },
-        "RE": {
-            "original": " HANDRODP, Ronald",
-            "dummy": "REDACTED"
-        },
-        "Date of Birth": {
-            "original": "12/7/1954",
-            "dummy": "01-01-1900"
-        },
-        "DOB": {
-            "original": "12/07/1954",
-            "dummy": "01-01-1900"
-        },
-        "Hospital Address": {
-            "original": "SENTA NEUROSURGERY",
-            "dummy": "Santa Clara Valley Medical Center, 751 S Bascom Ave, San Jose, CA 95128"
-        },
-        "Doctor Name": {
-            "original": "SANJAY GHOSH, MD",
-            "dummy": "Dr. John Smith"
-        },
-        "Mr_variant_handrop": {
-            "original": "Mr. Handrop",
-            "dummy": "Mr. Brown"
-        },
-        "Dr_variant_ghosh": {
-            "original": "Dr. Ghosh",
-            "dummy": "Dr. John"
-        }
+    "Patient Name::alex brown": {
+        "field": "Patient Name",
+        "original": "Alex Brown",
+        "dummy": "Begle ,Peter"
+    },
+    "Name::[redacted-name]": {
+        "field": "Name",
+        "original": "[REDACTED-Name]",
+        "dummy": "Begle, Peter"
+    },
+    "MRN::000000mrn": {
+        "field": "MRN",
+        "original": "000000MRN",
+        "dummy": "7605906"
+    },
+    "DOB::01-01-1900": {
+        "field": "DOB",
+        "original": "01-01-1900",
+        "dummy": "03/19/1937"
+    },
+    "Address::123 dummy street, dummy city": {
+        "field": "Address",
+        "original": "123 Dummy Street, Dummy City",
+        "dummy": "1146 navajo D Fawnskin, CA92333"
+    },
+    "SSN::000-01-0002": {
+        "field": "SSN",
+        "original": "000-01-0002",
+        "dummy": "999-99-9999"
+    },
+    "Patient's Phone Number::9000000001": {
+        "field": "Patient's Phone Number",
+        "original": "9000000001",
+        "dummy": "(909) 800-5237"
+    },
+    "Patient Care Report Number::00000000000000000000000000000000": {
+        "field": "Patient Care Report Number",
+        "original": "00000000000000000000000000000000",
+        "dummy": "005b7d74689145b8a6e9b6f7a7ef7678"
+    },
+    "Incident::24-159096": {
+        "field": "Incident",
+        "original": "24-159096",
+        "dummy": "24-159096"
     }
 }
